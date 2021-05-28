@@ -15,7 +15,11 @@ const Results = () => {
   const maxPoints = quiz.questions.length;
   const points = quiz.questions.reduce((acc, question) => {
     const result = results[question.id];
-    if (question.correct.some((v) => result === v || result.includes(v))) acc++;
+    if (
+      result &&
+      question.correct.some((v) => result === v || result.includes(v))
+    )
+      acc++;
     return acc;
   }, 0);
 
