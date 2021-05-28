@@ -1,0 +1,39 @@
+.Editor {
+  padding: 25px;
+}
+
+.Editor h4,
+.Editor h2 {
+  margin: 10px 0;
+}
+
+.Editor label {
+  display: block;
+  padding: 15px 10px;
+}
+
+.Editor-questions {
+  padding: 10px 0;
+}
+
+.Editor-question {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #a4b0be;
+  background-color: #dfe4ea;
+  position: relative;
+}
+
+.Editor-remove-question {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.Editor-question-choice {
+  margin: 5px 0;
+}
+
+.Editor-question-choice input, .Editor-question-choice button {
+  margin-right: 10px;
+}

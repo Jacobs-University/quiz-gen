@@ -1,0 +1,89 @@
+{
+  "title": "Test Quiz",
+  "metadata": {},
+  "options": {
+    "ANSWER_LABELS": false,
+    "MULTIPLE_ANSWERS": false
+  },
+  "duration": 120,
+  "questions": [
+    {
+      "id": 0,
+      "type": "MULTIPLE_CHOICE",
+      "question": "How much is 5x5",
+      "options": {
+        "ANSWER_LABELS": true,
+        "MULTIPLE_ANSWERS": true,
+        "ANSWER_LABELS_SUFFIX": ". "
+      },
+      "choices": {
+        "a": 25,
+        "b": 15,
+        "c": 55,
+        "d": 5
+      },
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": 1,
+      "type": "MULTIPLE_CHOICE",
+      "question": "What is x if x + 7 = 4",
+      "options": {
+        "ANSWER_LABELS": true,
+        "MULTIPLE_ANSWERS": false
+      },
+      "choices": {
+        "1": 2,
+        "2": -3,
+        "3": 3,
+        "4": 22
+      },
+      "correct": [
+        "2"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "NUMBER",
+      "question": "What is y if 1 - y = 7",
+      "options": {
+        "ANSWER_LABELS": true,
+        "MULTIPLE_ANSWERS": false
+      },
+      "correct": [
+        -6
+      ]
+    },
+    {
+      "id": 3,
+      "type": "TEXT",
+      "question": "Jim has 3 daughters, Lucy, Sara, and Leila. Who is Leila's father",
+      "options": {
+        "ANSWER_LABELS": true,
+        "MULTIPLE_ANSWERS": false,
+        "CASE_SENSITIVE": true
+      },
+      "correct": [
+        "Jim",
+        "Jimmy",
+        "Jimbo"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "MULTIPLE_CHOICE",
+      "question": "Gina bought 15 apples and gave 4 to Tom, 2 to Jane, and 7 to Tony. How many apples was Gina left with?",
+      "choices": {
+        "A": "4 Apples",
+        "B": "2 Apples",
+        "C": "Gina is out of Apples",
+        "D": "None of the above"
+      },
+      "correct": [
+        "B"
+      ]
+    }
+  ]
+}

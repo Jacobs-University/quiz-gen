@@ -1,0 +1,59 @@
+.App {
+  max-width: 1000px;
+  min-height: 100%;
+  margin: 0 auto;
+  background: #ced6e0;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: center;
+  padding: 20px 40px;
+}
+
+.App-header > h2,
+.App-header > h4 {
+  margin: 0;
+  padding: 5px;
+  flex: 0 0;
+  font-weight: 500;
+}
+
+.App-header > h4 {
+  font-weight: 400;
+}
+
+.App-nav {
+  background-color: #747d8c;
+  display: flex;
+}
+
+.App-nav > a {
+  flex: 0 1 auto;
+  padding: 15px 30px;
+  text-decoration: unset;
+  color: #000;
+  transition: background-color 0.2s ease-out;
+}
+
+.App-nav > a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.App-content {
+  flex: 1;
+  position: relative;
+}
+
+.App-content > .empty {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: transalteY(-50%);
+}

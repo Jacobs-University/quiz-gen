@@ -1,0 +1,34 @@
+.QuizList {
+  padding: 25px;
+}
+
+.QuizList-title {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px;
+  margin-bottom: 25px;
+}
+
+.QuizList-list {
+}
+
+.QuizList-quiz {
+  padding: 10px 15px;
+  border: 1px solid #a4b0be;
+  background-color: #dfe4ea;
+  cursor: pointer;
+  transition-property: border-color, background-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.QuizList-quiz:hover {
+  background-color: rgba(241, 242, 246, 1);
+  border-color: #747d8c;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.QuizList-quiz:active {
+  background-color: rgba(241, 242, 246, 0.8);
+  box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.1);
+}

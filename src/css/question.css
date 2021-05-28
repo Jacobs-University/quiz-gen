@@ -1,0 +1,114 @@
+.Question:first-child {
+  counter-reset: question-index;
+}
+
+.Question {
+  padding: 10px;
+  counter-increment: question-index;
+  border-top: 1px solid #a4b0be;
+}
+
+.Question:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.Question:last-child {
+  border-bottom: 1px solid #a4b0be;
+}
+
+.Question-text {
+  padding: 15px;
+}
+
+.Question-text::before {
+  content: "#" counter(question-index);
+  margin-right: 10px;
+  display: inline-block;
+  font-size: 24px;
+  color: #747d8c;
+  vertical-align: middle;
+}
+
+.Question-answer-choice {
+  padding: 10px 10px 10px 40px;
+  margin: 5px;
+  border: 1px solid #747d8c;
+  background-color: #a4b0be;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.2s ease-out;
+  position: relative;
+}
+
+.Question-answer-choice:hover {
+  opacity: 1;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.Question-answer-choice:active {
+  box-shadow: inset 0 0 3px 1px rgba(0, 0, 0, 0.2);
+  border-color: #2f3542;
+}
+
+.Question-answer-choice.selected {
+  opacity: 1;
+  border-color: #1e90ff;
+  box-shadow: inset 0 0 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.Question-answer-choice::before {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 10px;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #747d8c;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f1f2f6;
+  text-align: center;
+  color: #f1f2f6;
+  transition: color 0.2s ease-out;
+}
+
+.Question-answer-choice.selected::before {
+  content: "✓";
+  color: #1e90ff;
+  border-color: #1e90ff;
+}
+
+.Question-answer-choice.disabled {
+  background-color: rgba(223, 228, 234, 1);
+  border-color: #a4b0be;
+  color: #2f3542;
+  cursor: default;
+  box-shadow: unset;
+  opacity: 0.6;
+}
+
+.Question-answer-choice.disabled::before {
+  opacity: 0.3;
+}
+
+.Question-answer-field {
+  margin: 5px;
+  padding: 10px 15px;
+  border: unset;
+  border-radius: 2px;
+  background-color: transparent;
+  font-size: 16px;
+  border-bottom: 3px solid #57606f;
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.Question-answer-field:focus {
+  border-color: #1e90ff;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.Question-answer-field:disabled {
+  opacity: 0.6;
+}
