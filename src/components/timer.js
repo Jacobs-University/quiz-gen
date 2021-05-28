@@ -54,7 +54,7 @@ const formatDuration = (milliseconds) => {
 };
 
 const print = (number, minimum = false, colon = true) =>
-  number || colon || minimum
+  number || minimum
     ? number.toLocaleString("de-DE", {
         maximumIntegerDigits: 2,
         minimumIntegerDigits: minimum ? 2 : 1,
